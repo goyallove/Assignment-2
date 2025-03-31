@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=fo, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+</head>
+<body>
+    <h1>Employee Registration Form</h1>
+    
+    <form action="">
+        <table>
+            <tr>
+                <td ></td>
+                <td>
+                    <input type="radio" name="gender" value="Mr."> Mr.
+                    <input type="radio" name="gender" value="Mrs."> Mrs.
+                    <input type="radio" name="gender" value="Ms."> Ms.
+                </td>
+            </tr>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="first_name" placeholder="First Name" required></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="last_name" placeholder="Last Name" required></td>
+            </tr>
+            <tr>
+                <td>Mail Address1</td>
+                <td><input type="text" name="mail_address1" ></td>
+            </tr>
+            <tr>
+                <td>Mail Address2</td>
+                <td><input type="text" name="mail_address2" ></td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td><input type="text" name="city" required></td>
+            </tr>
+            <tr>
+                <td>State:</td>
+                <td>
+                    <select name="state">
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Delhi">Delhi</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Zip Code:</td>
+                <td><input type="text" name="zip" required></td>
+            </tr>
+            <tr>
+                <td>Upload Photo</td>
+                <td><input type="file" name="photo"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Mobile:</td>
+                <td><input type="tel" name="mobile" placeholder="+91" required></td>
+            </tr>
+            <tr>
+                <td>Languages Known:</td>
+                <td>
+                    <input type="checkbox" name="language[]" value="Gujarati"> Gujarati <br>
+                    <input type="checkbox" name="language[]" value="Hindi"> Hindi <br>
+                    <input type="checkbox" name="language[]" value="English"> English <br>
+                    <input type="checkbox" name="language[]" value="Marathi"> Marathi <br>
+                </td>
+            </tr>
+            <tr>
+                <td>Additional Information</td>
+                <td><textarea name="additional_info" placeholder="Optional"></textarea></td>
+            </tr>
+            
+        </table>
+        <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
